@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from "react-router-dom";
 
 export default class LoginForm extends Component {
 	constructor(props) {
@@ -57,6 +58,12 @@ export default class LoginForm extends Component {
 						</a> */}
 					</div>
 				</div>
+                <hr/>
+                <div className="form-group">
+                    <div className="col-md-8 col-md-offset-4">
+                        <a href="/auth/github" className="btn btn-default btn-lg">Login using GitHub</a>
+                    </div>
+                </div>
 			</form>
 		);
 	}

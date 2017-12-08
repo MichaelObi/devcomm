@@ -11,4 +11,5 @@ interface UserContract {
 	public function findUsersInStates(...$states);
 	public function getStateCommunityMemberCount($state);
 	public function getStatesWithCommunityMemberCount();
+    public function findOrCreateUser($githubUser);
 }

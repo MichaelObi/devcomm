@@ -42,7 +42,10 @@ Route::get('/send_test_batch_email', function(){
     });
 });
 
+Route::get('/auth/github', 'Auth\LoginController@redirectToProvider');
+Route::get('/auth/github/callback', 'Auth\LoginController@handleProviderCallback');
 
 Route::get('{slug}', function() {
     return view('welcome');
 })->where('slug', '(?!api)([A-z\d-\/_.]+)?');
+
