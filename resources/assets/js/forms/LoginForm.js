@@ -61,7 +61,7 @@ export default class LoginForm extends Component {
                 <hr/>
                 <div className="form-group">
                     <div className="col-md-8 col-md-offset-4">
-                        <a href="/auth/github" className="btn btn-default btn-lg">Login using GitHub</a>
+                        <a href="/auth/github" target="_self" className="btn btn-default btn-lg">Login using GitHub</a>
                     </div>
                 </div>
 			</form>
